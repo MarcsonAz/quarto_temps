@@ -1,0 +1,23 @@
+/*-- scss:defaults --*/
+
+@import url('https://fonts.googleapis.com/css?family=Georgia|Source+Sans+Pro|Merriweather');
+
+$body-bg: #E1E1E1;
+$body-color:	#001100;
+
+$font-family-sans-serif: "Open Sans", "Cambria","Georgia","serif";
+$font-family-monospace: "Noto Sans mono", "Source code pro","Courier new","mono-space";
+
+$font-size-base: 1.1rem;
+
+
+$primary: #7A4419;
+$secondary: #515A47;
+$tertiary: #400406;
+
+/*-- scss:rules --*/
+
+.h1, h1, .h2, h2 {
+  color: #333;
+  font-family: 'Merriweather';
+}
