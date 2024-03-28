@@ -1,19 +1,26 @@
 ---
-title: "modelo_base"
-author: "Atlas"
+title: "Texto de Análises do Atlas do Estado"
 format: html
-toc: true
+toc: false
 theme:
- - theme-ipea-adeb.scss
+  - cosmo
+  - theme-ipea-adeb.scss
 ---
 
-## Quarto
+[![](logo_atlas.jpeg "Atlas do Estado brasileiro"){ fig-alt="Logo Atlas" fig-align="left"}](https://www.ipea.gov.br/atlasestado/)
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+#### Nome do pesquisador da última versão
 
-## Running Code
+dd/mm/aaaa
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+### Fonte
+
+Origem dos dados. Exemplo. Para esta análise foram utilizados os registros da Rais cedido pelo Ministério do Trabalho e uma tabela de naturezas jurídicas da Receita Federal do Brasil. A série anual de vínculos formais de emprego se estende de 1985 até 2021. Mais informações sobre a base, <http://pdet.mte.gov.br/rais>. Para a identificação dos militares é utilizada a tabela de natureza jurídica e em conjunto com a Rais é possível classificar o vínculo.
+
+### Trabalho relacionado ou contexto
+
+A análise proposta para os vínculos militares entre 2011 e 2021.
 
 ```{r}
 1 + 1
@@ -27,3 +34,6 @@ You can add options to executable code like this
 ```
 
 The `echo: false` option disables the printing of code (only output is displayed).
+
+Lista com os nomes dos pesquisadores das versões anteriores, caso haja. Nunca esqueça que a ciência é colaborativa.
+
