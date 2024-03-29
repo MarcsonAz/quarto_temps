@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.4.547">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -68,6 +34,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="modelo_base_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="modelo_base_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -92,38 +87,48 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
+
 </header>
+
 
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><a href="https://www.ipea.gov.br/atlasestado/"><img src="logo_atlas.jpeg" title="Atlas do Estado brasileiro" class="img-fluid figure-img" alt="Logo Atlas"></a></p>
+<p><a href="https://www.ipea.gov.br/atlasestado/"><img src="logo_atlas.jpeg" title="Atlas do Estado brasileiro" class="img-fluid quarto-figure quarto-figure-left figure-img" alt="Logo Atlas"></a></p>
 </figure>
 </div>
 <section id="nome-do-pesquisador-da-última-versão" class="level4">
 <h4 class="anchored" data-anchor-id="nome-do-pesquisador-da-última-versão">Nome do pesquisador da última versão</h4>
-<p>dd/mm/aaaa</p>
+<p>Última atualização: 29/03/2024 <code>padrão - dd/mm/aaaa</code></p>
 </section>
-<section id="fonte" class="level3">
-<h3 class="anchored" data-anchor-id="fonte">Fonte</h3>
-<p>Origem dos dados. Exemplo. Para esta análise foram utilizados os registros da Rais cedido pelo Ministério do Trabalho e uma tabela de naturezas jurídicas da Receita Federal do Brasil. A série anual de vínculos formais de emprego se estende de 1985 até 2021. Mais informações sobre a base, <a href="http://pdet.mte.gov.br/rais" class="uri">http://pdet.mte.gov.br/rais</a>. Para a identificação dos militares é utilizada a tabela de natureza jurídica e em conjunto com a Rais é possível classificar o vínculo.</p>
+<section id="análise-da-atualização-de-dados-do-censo-suas-2017-2022" class="level3">
+<h3 class="anchored" data-anchor-id="análise-da-atualização-de-dados-do-censo-suas-2017-2022">Análise da atualização de dados do Censo Suas (2017-2022)</h3>
+<section id="fonte" class="level4">
+<h4 class="anchored" data-anchor-id="fonte">Fonte</h4>
+<p>Registros de profissionais da área de Assistência social do Censo Suas.</p>
+<p>BRASIL. Secretaria Nacional de Assistência Social – SNAS/MDS. <strong>Censo Suas</strong>. Brasília, DF: SNAS/MDS Disponível em: <a href="https://aplicacoes.mds.gov.br/snas/vigilancia/index2.php" class="uri">https://aplicacoes.mds.gov.br/snas/vigilancia/index2.php</a>. Acesso em: 01 de março de 2024.</p>
 </section>
-<section id="trabalho-relacionado-ou-contexto" class="level3">
-<h3 class="anchored" data-anchor-id="trabalho-relacionado-ou-contexto">Trabalho relacionado ou contexto</h3>
-<p>A análise proposta para os vínculos militares entre 2011 e 2021.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
-<p>You can add options to executable code like this</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 4</code></pre>
-</div>
-</div>
-<p>The <code>echo: false</code> option disables the printing of code (only output is displayed).</p>
-<p>Lista com os nomes dos pesquisadores das versões anteriores, caso haja. Nunca esqueça que a ciência é colaborativa.</p>
+<section id="trabalho-relacionado-ou-contexto" class="level4">
+<h4 class="anchored" data-anchor-id="trabalho-relacionado-ou-contexto">Trabalho relacionado ou contexto</h4>
+<p>Este texto apresenta uma breve análise das últimas atualizações de dados do Censo SUAS, com o objetivo de identificar padrões e tendências desde a publicação do livro “Trajetórias da burocracia na Nova República” em <span class="math inline">\(2023\)</span>. O capítulo <span class="math inline">\(16\)</span> “As capacidades estatais, serviços, trabalhadores na política de assistência social no Brasil” apresentou dados atualizados até o ano <span class="math inline">\(2017\)</span>, com foco em três dimensões principais do Censo SUAS: vínculos, equipamentos e qualificação profissional (JANNUZZI et al, <span class="math inline">\(2023\)</span>).</p>
+</section>
+<section id="resultados-importantes" class="level4">
+<h4 class="anchored" data-anchor-id="resultados-importantes">Resultados importantes</h4>
+<p>Entre <span class="math inline">\(2017\)</span> e <span class="math inline">\(2022\)</span> houve um crescimento expressivo no número de trabalhadores nos equipamentos de assistência social. A maior variação percentual<span class="math inline">\(^{[1]}\)</span> observada diz respeito ao número de Famílias Acolhedoras participantes (<span class="math inline">\(118\%\)</span>), que aumentou de <span class="math inline">\(821\)</span> para <span class="math inline">\(1.788\)</span> famílias. Nas diferentes categorias de unidades especializadas, também houve aumentos significativos nos respectivos números de profissionais, nos seguintes montantes e percentuais de variação: <span class="math inline">\((i)\)</span> Centros de Acolhimento, <span class="math inline">\(25.176\)</span> (<span class="math inline">\(27,5\%\)</span>); <span class="math inline">\((ii)\)</span> Centro POP, <span class="math inline">\(775\)</span> (<span class="math inline">\(26\%\)</span>); <span class="math inline">\((iii)\)</span> Centro DIA, <span class="math inline">\(7.077\)</span> (<span class="math inline">\(27,2\%\)</span>); <span class="math inline">\((iv)\)</span> CRAS, <span class="math inline">\(19.182\)</span> (<span class="math inline">\(20\%\)</span>); <span class="math inline">\((v)\)</span> CREAS, <span class="math inline">\(4.253\)</span> (<span class="math inline">\(18,6\%\)</span>); e <span class="math inline">\((vi)\)</span> Centro de Convivência <span class="math inline">\(1.272\)</span> (<span class="math inline">\(2\%\)</span>).</p>
+<p>Sobre o perfil do vínculo de trabalho, a quantidade de profissionais com vínculo estatutário apresentou variação percentual de <span class="math inline">\(4,09\%\)</span>, enquanto a categoria dos ocupantes de cargos comissionados teve um crescimento de <span class="math inline">\(30\%\)</span>. Os ocupantes de cargos comissionados destituídos de vínculo profissional permanente com a Administração tiveram o maior variação percentual entre os tipos de vínculo (<span class="math inline">\(31\%\)</span>), enquanto que o vínculo CLT sofreu uma redução percentual de <span class="math inline">\(1,54\%\)</span>. O aumento percentual observado para a categoria “sem vínculo permanente” e a diminuição percentual verificada para a categoria “CLT” podem indicar uma precarização das relações de trabalho no setor de assistência social.</p>
+<p>A respeito da escolaridade dos trabalhadores, notou-se a diminuição do percentual de participação<span class="math inline">\(^{[2]}\)</span> do grupo “Sem Instrução”, que representava <span class="math inline">\(3,5\%\)</span> do total no ano de 2017 e passou para <span class="math inline">\(2,6\%\)</span> em 2022. Já os profissionais de nível médio que antes eram <span class="math inline">\(40,4\%\)</span>, passaram a representar <span class="math inline">\(43\%\)</span> do total. Houve uma sutil variação também nos demais níveis de escolaridades, a saber: <span class="math inline">\((i)\)</span> ensino fundamental, de <span class="math inline">\(5,9\%\)</span> para <span class="math inline">\(4,9\%\)</span>; <span class="math inline">\((ii)\)</span> ensino superior, de <span class="math inline">\(43\%\)</span> para <span class="math inline">\(42\%\)</span>; e <span class="math inline">\((iii)\)</span> pós-graduação (de <span class="math inline">\(7,2\%\)</span> para <span class="math inline">\(7,4\%\)</span>).</p>
+<p>Sobre a formação dos trabalhadores, algumas categorias tiveram redução do número de profissionais entre <span class="math inline">\(2017\)</span> e <span class="math inline">\(2022\)</span>, quais sejam: <span class="math inline">\((i)\)</span> programador (<span class="math inline">\(-25,49\%\)</span>), <span class="math inline">\((ii)\)</span> terapeuta ocupacional (<span class="math inline">\(-22,7\%\)</span>), <span class="math inline">\((iii)\)</span> cientista político (<span class="math inline">\(-8,33\%\)</span>), <span class="math inline">\((iv)\)</span> sociólogo (<span class="math inline">\(-3\%\)</span>), e <span class="math inline">\((v)\)</span> analista de sistemas (<span class="math inline">\(-2,47\%\)</span>). As demais profissões tiveram aumento no número de trabalhadores, em especial: <span class="math inline">\((i)\)</span> advogados (<span class="math inline">\(34\%\)</span>), <span class="math inline">\((ii)\)</span> assistentes sociais (<span class="math inline">\(15\%\)</span>), <span class="math inline">\((iii)\)</span> administradores (<span class="math inline">\(19\%\)</span>), <span class="math inline">\((iv)\)</span> pedagogos (<span class="math inline">\(20,4\%\)</span>), <span class="math inline">\((v)\)</span> psicólogos (<span class="math inline">\(13,3\%\)</span>), e <span class="math inline">\((vi)\)</span> outras formações não declaradas (<span class="math inline">\(11,9\%\)</span>). Médicos (<span class="math inline">\(233\%\)</span>), enfermeiros (<span class="math inline">\(35,2\%\)</span>) e nutricionistas (<span class="math inline">\(55,7\%\)</span>), embora tenham apresentado um aumento percentual muito significativo, em números absolutos somaram apenas <span class="math inline">\(7\)</span>, <span class="math inline">\(43\)</span> e <span class="math inline">\(68\)</span> profissionais, respectivamente.</p>
+<hr>
+<section id="referêncas-e-notas" class="level5">
+<h5 class="anchored" data-anchor-id="referêncas-e-notas">Referêncas e notas</h5>
+<p>JANNUZZI, P; BRONZO, C; FERRAREZI, E; BRANDÃO, L; FERREIRA, U. As capacidades estatais, serviços, trabalhadores na política de assistência social no Brasil. In: LOPEZ, Felix G.; CARDOSO JÚNIOR, José Celso (Orgs.). <strong>Trajetórias da burocracia na Nova República</strong>: heterogeneidades, desigualdades e perspectivas (1985-2020). Brasília: IPEA, 2023. Capítulo 16, p.&nbsp;503.</p>
+<p>[1] Variação % = [(total do ano atual – total do ano-base) ÷ total do ano-base] × 100<br>
+[2] Percentual com relação ao total = (total do ano * 100) ÷ total geral</p>
+<p>Pesquisadores que contribuíram nesta ou em versões anteriores. <code>ciência é fruto de colaboração</code></p>
+<p>Nomes listados</p>
+<p>Nomes listados</p>
+<p>Nomes listados</p>
+</section>
+</section>
 </section>
 
 </main>
@@ -207,10 +212,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -220,8 +224,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -234,6 +247,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -277,6 +409,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -302,6 +435,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -362,6 +521,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 
