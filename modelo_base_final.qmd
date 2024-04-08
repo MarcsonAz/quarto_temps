@@ -12,7 +12,7 @@ theme:
 
 #### Nome do pesquisador da última versão
 
-Última atualização: 29/03/2024 `padrão - dd/mm/aaaa`
+Última atualização: 29/03/2024
 
 ### Análise da atualização de dados do Censo Suas (2017-2022)
 
@@ -48,13 +48,30 @@ JANNUZZI, P; BRONZO, C; FERRAREZI, E; BRANDÃO, L; FERREIRA, U. As capacidades e
 [1] Variação % = [(total do ano atual – total do ano-base) ÷ total do ano-base] × 100                                                                                
 [2] Percentual com relação ao total = (total do ano * 100) ÷ total geral
 
-Pesquisadores que contribuíram nesta ou em versões anteriores. `ciência é fruto de colaboração`
 
-Nomes listados
+**Produção de referência**:
 
-Nomes listados
+Paulo Jannuzzi
 
-Nomes listados
+
+Carla Bronzo
+
+
+Elisabete Ferrarezi
+
+
+Lucas Brandão
+
+
+Ulisses Ferreira
+
+
+**Material de Análise**:
+
+Laís Silvéria de Oliveira
+
+Marcson de Azevedo Araújo
+
 
 
 
