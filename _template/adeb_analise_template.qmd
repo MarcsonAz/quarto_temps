@@ -1,0 +1,61 @@
+---
+title: "Análises Atlas do Estado Brasileiro"
+format: html
+toc: false
+self-contained: true
+theme:
+  - cosmo
+  - ../_apoio/theme-ipea-adeb.scss
+---
+
+[![](../_apoio/fundo_ipea.jpg "Ipea"){fig-alt="Logo Ipea" fig-align="left"}](https://www.ipea.gov.br/)
+
+
+{TEXTOS OU PALAVRAS ENTRE PARÊNTESES SÃO PARA ALTERAR E TAMBÉM TÍTULO GERAL E DAS SEÇÕES}
+
+
+{Nome do autor principal} - {Cargo} - Ipea/Diest
+
+Última atualização: {Data}
+
+---
+
+### {TÍTULO}
+
+
+##### {TÍTULO DA SEÇÃO}
+
+Lorem Ipsum **em negrito** is simply dummy *em itálico* text of the NÚMEROS E PERCENTUAIS $29$ - ($15\%$) -  printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+
+##### {TÍTULO DA SEÇÃO}
+
+Lorem Ipsum **em negrito** is simply dummy *em itálico* text of the NÚMEROS E PERCENTUAIS $29$ - ($15\%$) -  printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+
+##### Fonte
+
+**EXEMPLO: **
+
+Registros de profissionais da área de Assistência social do Censo Suas.
+
+BRASIL. Secretaria Nacional de Assistência Social – SNAS/MDS. **Censo Suas**. Brasília, DF: SNAS/MDS Disponível em: <https://aplicacoes.mds.gov.br/snas/vigilancia/index2.php>. Acesso em: 1º de março de 2024.
+
+
+---
+
+##### Referêncas e notas
+
+**EXEMPLO: **
+
+JANNUZZI, P; BRONZO, C; FERRAREZI, E; BRANDÃO, L; FERREIRA, U. As capacidades estatais, serviços, trabalhadores na política de assistência social no Brasil. In: LOPEZ, Felix G.; CARDOSO JÚNIOR, José Celso (Orgs.). **Trajetórias da burocracia na Nova República**: heterogeneidades, desigualdades e perspectivas (1985-2020). Brasília: IPEA, 2023.  Capítulo 16, p. 503.
+
+[1] Variação % = [(total do ano atual – total do ano-base) ÷ total do ano-base] × 100                                                                                
+[2] Percentual com relação ao total = (total do ano * 100) ÷ total geral
+
+
+##### Membros da equipe envolvidos
+
+Nome completo dos envolvidos
+
+
+
+
